@@ -9,3 +9,5 @@ For help getting started with Flutter, view our online
 
 
 Initial code for attempting to create flutter chat application, based on https://github.com/flutter/friendlychat-steps 
+
+![Screenshot](uplift_app.png?raw=true "Title")
