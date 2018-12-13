@@ -6,3 +6,6 @@ A new flutter project.
 
 For help getting started with Flutter, view our online
 [documentation](http://flutter.io/).
+
+
+Initial code for attempting to create flutter chat application, based on https://github.com/flutter/friendlychat-steps 
