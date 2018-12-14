@@ -13,11 +13,11 @@ final ThemeData kIOSTheme = new ThemeData(
 );
 
 final ThemeData kDefaultTheme = new ThemeData(
-  primarySwatch: Colors.purple,
+  primarySwatch: Colors.blue,
   accentColor: Colors.orangeAccent[400],
 );
 
-const String _name = "Your Name";
+const String _name = "Uplift";
 
 void main() {
   runApp(new FriendlychatApp());
@@ -27,7 +27,7 @@ class FriendlychatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: "Friendlychat",
+      title: "Uplift Messaging",
       theme: defaultTargetPlatform == TargetPlatform.iOS
           ? kIOSTheme
           : kDefaultTheme,
@@ -89,7 +89,7 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Friendlychat"),
+          title: new Text("Uplift Messaging"),
           elevation: Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
         ),
         body: new Column(children: <Widget>[
@@ -123,9 +123,7 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
                     _isComposing = text.length > 0;
                   });
                 },
-                onSubmitted: _isComposing
-                          ?_handleSubmitted
-                          :null,
+                onSubmitted: _handleSubmitted,
                 decoration:
                     new InputDecoration.collapsed(hintText: "Send a message"),
               ),
